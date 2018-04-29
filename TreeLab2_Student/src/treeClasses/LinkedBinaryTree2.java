@@ -10,10 +10,10 @@ public class LinkedBinaryTree2<E extends Comparable<E>> extends LinkedBinaryTree
 		else
 			recInsert(root(), e); 
 	}
-
+	//Changed the order so the elements are displayed in decreasing order. The structure of the tree did change
 	private void recInsert(Position<E> r, E e) {
 		int c = e.compareTo(r.getElement()); 
-		if (c < 0) 
+		if (c > 0) 
 			if (!hasLeft(r))
 				addLeft(r, e); 
 			else 
