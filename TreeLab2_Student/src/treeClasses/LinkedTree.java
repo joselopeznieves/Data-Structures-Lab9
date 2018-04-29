@@ -123,7 +123,7 @@ public class LinkedTree<E> extends AbstractTree<E> implements Cloneable {
 		/*******************************************************/
 		// SOME MISSING CODE HERE -- DISCOVER IT AN ADD... 
 		// AS SPECIFIED IN EXERCISE 4. 
-		
+		parent.getChildren().remove(ntd); //The ntd was not being removed from the parent's children, so the position was not being removed 
 		
 		// discard the removed node
 		ntd.discard(); 
